@@ -84,7 +84,7 @@ public abstract class Conta {
 
     public void transferir(double valor, Conta contaDestino) {
         if(validarTransferencia(valor)) {
-            contaDestino.saldo = contaDestino.saldo + valor;
+            contaDestino.depositar(valor);
             this.saldo = this.saldo - valor;
         }
     }
