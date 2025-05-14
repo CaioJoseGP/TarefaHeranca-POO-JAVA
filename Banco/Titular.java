@@ -1,4 +1,4 @@
-public class Titular {
+public abstract class Titular {
     private String nome;
     private String telefone;
     private Endereco endereco;
