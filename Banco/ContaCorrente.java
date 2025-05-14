@@ -15,7 +15,12 @@ public class ContaCorrente extends ContaPF {
 
     //Getters e Setters
     public String getTitularSecundario() {
-        return "Nome: " + titularSecundario.getNome() + "\nCPF: " + titularSecundario.getCpf();
+        if (titularSecundario == null) {
+            return "Conta sem titular secundário.";
+            
+        } else {
+            return "Nome: " + titularSecundario.getNome() + "\nCPF: " + titularSecundario.getCpf();
+        }
     }
 
     public void setTitularSecundario(PessoaFisica titularSecundario) {
