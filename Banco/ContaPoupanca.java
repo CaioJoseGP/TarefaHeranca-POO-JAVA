@@ -4,7 +4,7 @@ public class ContaPoupanca extends ContaPF {
     //Construtor
     public ContaPoupanca(String numero, String agencia, String banco, PessoaFisica titular) {
         super(numero, agencia, banco, titular);
-        this.taxaRendimento = 50;
+        this.taxaRendimento = 0.5;
     }
 
     //Getters e Setters
